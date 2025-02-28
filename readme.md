@@ -4,7 +4,7 @@
 This project is a simple image slider that allows users to navigate through images using "Next" and "Prev" buttons. The slider automatically displays images one at a time with a fade effect.
 
 ## Live Demo
-You can view the live version of the slider here: [Live Slider](https://slider-javascript-theta.vercel.app/)
+You can view the live version of the slider here: [Live Slider](https://slider-javascript-five.vercel.app/)
 
 ## Project Structure
 The project consists of three main files:
@@ -77,6 +77,7 @@ Handles the image navigation logic:
 - Auto-slide functionality.
 - Navigation dots for slide indication.
 - Touch swipe support for mobile devices.
+- Improved accessibility with `aria-label` for better screen reader support.
 
 ---
 
