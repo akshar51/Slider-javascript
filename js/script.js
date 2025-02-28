@@ -24,3 +24,8 @@ let displaySlide = (n)=>{
 
 displaySlide(slideIndex)
 
+// AUTO SLIDE
+// setInterval(()=>{
+//     currSlide(1);
+// },2000)
+

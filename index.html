@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!----- TITLE ------>
@@ -24,8 +25,15 @@
         <div class="slider-item d-none fade">
             <img src="./image/img-3.webp" alt="">
         </div>
-        <button class="prev" onclick="currSlide(-1)">Prev</button>
-        <button class="next" onclick="currSlide(1)">Next</button>
+        <button class="prev" onclick="currSlide(-1)"><i class="fa-solid fa-arrow-left"></i></button>
+        <button class="next" onclick="currSlide(1)"><i class="fa-solid fa-arrow-right-long"></i></button>
+        <div class="white">
+            <div class="btn-box" style="text-align:center">
+                <div class="dot" onclick="currentSlide(1)"></div>
+                <div class="dot" onclick="currentSlide(2)"></div>
+                <div class="dot" onclick="currentSlide(3)"></div>
+              </div>
+        </div>
     </div>
     <!-------- SLIDER END -------->
 
