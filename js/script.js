@@ -16,13 +16,14 @@ let displaySlide = (n)=>{
     if(n < 0){
         slideIndex =  sliderItem.length - 1;
     }
-
+    
     for(let i=0;i<sliderItem.length;i++){
         sliderItem[i].classList.remove("active")
     }
     sliderItem[slideIndex].classList.add("active")
 }
 displaySlide(slideIndex)
+
 
 // AUTO SLIDE
 // setInterval(()=>{
