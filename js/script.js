@@ -29,3 +29,12 @@ displaySlide(slideIndex)
 //     currSlide(1);
 // },2000)
 
+let btn = document.querySelectorAll(".dot")
+// PAGINATION BUTTON
+let slides = (n)=>{
+    sliderItem.forEach((val)=>{
+        val.classList.remove("active")
+    })
+    sliderItem[n].classList.add("active")
+    dot[n].style.color = "red"   
+}   
