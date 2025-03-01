@@ -4,6 +4,7 @@ let slideIndex = 0;
 let currSlide= (n)=>{
     slideIndex+=n;
     displaySlide(slideIndex)
+    slides(slideIndex)
 }
 
 let displaySlide = (n)=>{
@@ -21,7 +22,6 @@ let displaySlide = (n)=>{
     }
     sliderItem[slideIndex].classList.add("active")
 }
-
 displaySlide(slideIndex)
 
 // AUTO SLIDE
@@ -30,11 +30,19 @@ displaySlide(slideIndex)
 // },2000)
 
 let btn = document.querySelectorAll(".dot")
+let btnbox = document.querySelectorAll(".btn-box")
+
 // PAGINATION BUTTON
 let slides = (n)=>{
     sliderItem.forEach((val)=>{
         val.classList.remove("active")
     })
-    sliderItem[n].classList.add("active")
-    dot[n].style.color = "red"   
-}   
+    sliderItem[n].classList.add("active");
+
+    btn.forEach((btns)=>{
+        btns.classList.remove("red")
+    })
+    btn[n].classList.add("red")
+
+} 
+

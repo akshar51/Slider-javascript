@@ -104,3 +104,10 @@ body{
     justify-content: center;
     gap: 10px;
 }
+
+.btn-box .red{
+    background-color: red;
+}
+.plain-white{
+    background-color: white;
+}
