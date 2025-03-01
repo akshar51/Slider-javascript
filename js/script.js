@@ -29,10 +29,11 @@ displaySlide(slideIndex)
 //     currSlide(1);
 // },2000)
 
+
+//---------------- PAGINATION BUTTON --------------------//
 let btn = document.querySelectorAll(".dot")
 let btnbox = document.querySelectorAll(".btn-box")
 
-// PAGINATION BUTTON
 let slides = (n)=>{
     sliderItem.forEach((val)=>{
         val.classList.remove("active")
