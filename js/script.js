@@ -45,6 +45,8 @@ let slides = (n)=>{
         btns.classList.remove("red")
     })
     btn[n].classList.add("red")
-
+    if(n>=slideIndex.length-1){
+        slideIndex=0
+    }
 } 
 
